@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import implementations.AmazonSearchAutomationImplementation;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -10,7 +11,7 @@ public class AmazonSearchAutomationStepDefinition {
         AmazonSearchAutomationImplementation.openAmazon();
     }
 
-    @Then("^Search for shoes$")
+    @And("^Search for shoes$")
     public static void searchOnWebsite() {
         AmazonSearchAutomationImplementation.searchForShoes();
     }

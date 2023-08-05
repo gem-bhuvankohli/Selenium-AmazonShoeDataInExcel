@@ -15,4 +15,9 @@ public class ExcelManipulationStepDefinition {
     public static void writeAndSaveData() {
         ExcelManipulationImplementation.writeAndSaveDataToExcel();
     }
+
+    @Then("^parse the excel data to a json file$")
+    public static void fetchDataFromExcel() {
+        ExcelManipulationImplementation.fetchDataFromExcelParseToJson();
+    }
 }
