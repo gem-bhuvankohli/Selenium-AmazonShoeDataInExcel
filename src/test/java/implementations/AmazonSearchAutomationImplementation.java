@@ -9,6 +9,7 @@ import java.time.Duration;
 public class AmazonSearchAutomationImplementation {
     static WebDriver driver = new ChromeDriver();
     static JavascriptExecutor executor = (JavascriptExecutor) driver;
+
     /*
      * Opens amazon.in, maximizing window size and set implicit timeout
      * @return opens amazon and maximizing window size.
@@ -23,6 +24,7 @@ public class AmazonSearchAutomationImplementation {
             e.printStackTrace();
         }
     }
+
     /*
      * Searches Shoes in amazon search box
      * @return shoes on amazon website
@@ -36,6 +38,7 @@ public class AmazonSearchAutomationImplementation {
             e.printStackTrace();
         }
     }
+
     /*
      * Mark adidas and puma brand shoes in filters box
      * @return filters adidas and puma brand shoes.
